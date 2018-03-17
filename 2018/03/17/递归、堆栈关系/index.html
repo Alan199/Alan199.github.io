@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="算法," />
 
 
 
@@ -93,12 +93,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alan199">
-<meta property="og:url" content="http://https://github.com/Alan199/Alan199.github.io.git/archives/2017/05/index.html">
+<meta name="description" content="编程题：用递归算法将一个整数n转换成字符串。例如输入234 ，应输出字符串”2 3 4”。    voit convert(int n)    {      int i;      char c;      if((i=n/10)!=0)      convert(i);      c=n%10+’0’; //个位数加上‘0’的ASCII码值（48）得到该位数对应字符表示      cout&amp;lt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="递归、堆栈关系">
+<meta property="og:url" content="http://https://github.com/Alan199/Alan199.github.io.git/2018/03/17/递归、堆栈关系/index.html">
 <meta property="og:site_name" content="Alan199">
+<meta property="og:description" content="编程题：用递归算法将一个整数n转换成字符串。例如输入234 ，应输出字符串”2 3 4”。    voit convert(int n)    {      int i;      char c;      if((i=n/10)!=0)      convert(i);      c=n%10+’0’; //个位数加上‘0’的ASCII码值（48）得到该位数对应字符表示      cout&amp;lt">
+<meta property="og:updated_time" content="2018-03-17T02:07:57.816Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Alan199">
+<meta name="twitter:title" content="递归、堆栈关系">
+<meta name="twitter:description" content="编程题：用递归算法将一个整数n转换成字符串。例如输入234 ，应输出字符串”2 3 4”。    voit convert(int n)    {      int i;      char c;      if((i=n/10)!=0)      convert(i);      c=n%10+’0’; //个位数加上‘0’的ASCII码值（48）得到该位数对应字符表示      cout&amp;lt">
 
 
 
@@ -126,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="http://https://github.com/Alan199/Alan199.github.io.git/archives/2017/05/"/>
+  <link rel="canonical" href="http://https://github.com/Alan199/Alan199.github.io.git/2018/03/17/递归、堆栈关系/"/>
 
 
 
 
 
-  <title>Archive | Alan199</title>
+  <title>递归、堆栈关系 | Alan199</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="">
@@ -158,7 +162,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,103 +246,157 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      Um..! 9 posts in total. Keep on posting.
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/30/第四篇/" itemprop="url">
-              
-                <span itemprop="name">第四篇</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-30T17:50:31+08:00"
-              content="2017-05-30" >
-          05-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/30/第三篇博客/" itemprop="url">
-              
-                <span itemprop="name">第三篇博客</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-30T12:08:18+08:00"
-              content="2017-05-30" >
-          05-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://https://github.com/Alan199/Alan199.github.io.git/2018/03/17/递归、堆栈关系/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Alan199">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Alan199">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">递归、堆栈关系</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-17T09:30:42+08:00">
+                2018-03-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="编程题："><a href="#编程题：" class="headerlink" title="编程题："></a>编程题：</h3><p>用递归算法将一个整数n转换成字符串。例如输入234 ，应输出字符串”2 3 4”。<br>    voit convert(int n)<br>    {<br>      int i;<br>      char c;<br>      if((i=n/10)!=0)<br>      convert(i);<br>      c=n%10+’0’; //个位数加上‘0’的ASCII码值（48）得到该位数对应字符表示<br>      cout&lt;&lt;””&lt;&lt;c;<br>    }</p>
+<p>显然，设输入52，第一个输出的c应该是2，然后是5.但是结果显示是“5 2”</p>
+<p>那么递归应该就利用堆栈来实现的。</p>
+<blockquote>
+<p>递归是用系统栈来实现的，一般栈的大小默认为1MB。虽然表面上没有使用栈，但系统执行时会自动建立和使用栈。</p>
+</blockquote>
+<hr>
+<h4 id="栈："><a href="#栈：" class="headerlink" title="栈："></a>栈：</h4><p>一种线性的数据结构，特点“先进后出”</p>
+<h4 id="堆和栈的区别："><a href="#堆和栈的区别：" class="headerlink" title="堆和栈的区别："></a>堆和栈的区别：</h4><p>堆是指程序运行时申请动态内存。可以看作一棵完全二叉树。</p>
+<p>栈是一种使用方法，先进后出。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/算法/" rel="tag"># 算法</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/31/hexo-g-时-line-4-column1-报错/" rel="next" title="hexo g 时 line 4 column1 报错 ">
+                <i class="fa fa-chevron-left"></i> hexo g 时 line 4 column1 报错 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -346,6 +404,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -365,8 +427,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -419,6 +490,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#编程题："><span class="nav-number">1.</span> <span class="nav-text">编程题：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#栈："><span class="nav-number">1.1.</span> <span class="nav-text">栈：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#堆和栈的区别："><span class="nav-number">1.2.</span> <span class="nav-text">堆和栈的区别：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -532,11 +619,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
